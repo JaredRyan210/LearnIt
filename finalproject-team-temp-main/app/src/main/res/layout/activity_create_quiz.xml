@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".ui.quizzes.QuizDetail">
+
+    <TextView
+        android:id="@+id/textViewQuizTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Create New Quiz"
+        android:paddingBottom="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Quiz Title" />
+
+    <EditText
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Question" />
+
+    <EditText
+        android:id="@+id/Answer"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Answer" />
+
+    <Button
+        android:id="@+id/addQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Done" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <action
+        android:id="@+id/action_nav_home_to_loginFragment"
+        app:destination="@+id/nav_loginFragment"/>
+    <action
+        android:id="@+id/action_nav_home_to_signUpFragment"
+        app:destination="@id/nav_signUpFragment"/>
+    <action
+        android:id="@+id/action_loginFragment_to_dashboardFragment"
+        app:destination="@+id/nav_dashboardFragment"/>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hfad.finalproject_team_temp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@+id/nav_dashboardFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_signUpFragment"
+        android:name="com.hfad.finalproject_team_temp.ui.home.SignUpFragment"
+        android:label="@string/menu_signup"
+        tools:layout="@layout/activity_sign_up" >
+
+        <action
+            android:id="@+id/action_nav_home_to_signUpFragment"
+            app:destination="@id/nav_signUpFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.hfad.finalproject_team_temp.ui.quizzes.QuizzesFragment"
+        android:label="@string/menu_quizzes"
+        tools:layout="@layout/fragment_quizzes" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.hfad.finalproject_team_temp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_dashboardFragment"
+        android:name="com.hfad.finalproject_team_temp.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard"/>
+    <fragment
+        android:id="@+id/nav_loginFragment"
+        android:name="com.hfad.finalproject_team_temp.ui.home.LoginFragment"
+        android:label="@string/menu_login"
+        android:layout="@layout/activity_login"/>
+
+
+</navigation>

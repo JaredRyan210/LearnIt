@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.quizzes.QuizDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/textViewQuizTitle"
+        style="@style/TextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6750A4"
+        android:paddingBottom="16dp"
+        android:text="Create New Quiz"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Quiz Title"
+        style="@style/TextAppearance"
+        android:padding="3dp"/>
+
+    <EditText
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Question"
+        style="@style/TextAppearance"
+        android:padding="3dp"/>
+
+    <EditText
+        android:id="@+id/Answer"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Answer"
+        style="@style/TextAppearance"
+        android:padding="3dp"/>
+
+    <Button
+        android:id="@+id/addQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="space_mono_regular"
+        style="@style/ButtonStyle"
+        android:padding="3dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Done"
+        android:fontFamily="space_mono_regular"
+        style="@style/ButtonStyle"
+        android:padding="3dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/ButtonStyle"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

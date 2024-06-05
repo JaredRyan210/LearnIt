@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp">
+
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First Name"
+            style="@style/TextAppearance"/>
+
+        <EditText
+            android:id="@+id/lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            style="@style/TextAppearance"/>
+
+        <EditText
+            android:id="@+id/TextUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            style="@style/TextAppearance"
+            />
+        <EditText
+            android:id="@+id/TextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            style="@style/TextAppearance"
+            />
+        <EditText
+            android:id="@+id/TextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            style="@style/TextAppearance"
+            />
+        <EditText
+            android:id="@+id/TextConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Confirm Password"
+            style="@style/TextAppearance"
+            />
+
+        <Button
+            android:id="@+id/bCreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            style="@style/ButtonStyle"
+            />
+        <!--
+        <Button
+            android:id="@+id/bBacktoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Home" />
+        -->
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finalprojectteamtemp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.quizzes.TakeQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ui.quizzes.CreateQuiz"
+            android:exported="false"
+            android:label="@string/title_activity_create_quiz"
+            android:theme="@style/Theme.Finalprojectteamtemp" />
+        <activity
+            android:name=".ui.quizzes.EditQuiz"
+            android:exported="false"
+            android:label="@string/title_activity_edit_quiz"
+            android:theme="@style/Theme.Finalprojectteamtemp" />
+        <activity
+            android:name=".ui.quizzes.QuizDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.LoginFragment"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Finalprojectteamtemp" />
+        <activity
+            android:name=".ui.home.SignUpFragment"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.Finalprojectteamtemp" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Finalprojectteamtemp.NoActionBarAndNoStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

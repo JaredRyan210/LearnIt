@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <color name="theme_purple">#6750A4</color>
+    <color name="light_purple">#D1C4E9</color>
+    <color name="light_blue">#B3E5FC</color>
+    <style name="Theme.Finalprojectteamtemp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Finalprojectteamtemp.NoActionBarAndNoStatusBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+
+
+    </style>
+
+    <style name="Theme.Finalprojectteamtemp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Finalprojectteamtemp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Finalprojectteamtemp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="TextAppearance" parent="TextAppearance.AppCompat">
+        <!-- Define text appearances for different elements -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">space_mono_regular</item>
+
+        <!-- Add other text appearance attributes -->
+    </style>
+
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <!-- Set the background drawable -->
+
+        <item name="android:elevation">4dp</item>
+
+        <!-- Other button attributes -->
+        <item name="android:backgroundTint">#46545D</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:fontFamily">space_mono_regular</item>
+    </style>
+
+
+
+</resources>
